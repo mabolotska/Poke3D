@@ -22,6 +22,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        sceneView.autoenablesDefaultLighting = true
       
     }
     
@@ -29,13 +30,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        let configuration = ARImageTrackingConfiguration()
+        let configuration = ARWorldTrackingConfiguration()
         
         if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "Pokemon Cards", bundle: Bundle.main) {
             
-            configuration.trackingImages = imageToTrack
+            configuration.detectionImages = imageToTrack
             
-            configuration.maximumNumberOfTrackedImages = 1
+            configuration.maximumNumberOfTrackedImages = 2
         }
 
         // Run the view's session
@@ -64,24 +65,35 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             planeNode.eulerAngles.x = -.pi/2
             node.addChildNode(planeNode)
+            
+            if imageAnchor.referenceImage.name == "eevee-card" {
+                          if let pokeScene = SCNScene(named: "art.scnassets/eevee.scn") {
+          
+                              if let pokeNode = pokeScene.rootNode.childNodes.first {
+          
+                                  pokeNode.eulerAngles.x = .pi / 2
+          
+                                  planeNode.addChildNode(pokeNode)
+                              }
+                          }
+                      }
+            
+            if imageAnchor.referenceImage.name == "oddish-card" {
+                            if let pokeScene = SCNScene(named: "art.scnassets/oddish.scn") {
+            
+                                if let pokeNode = pokeScene.rootNode.childNodes.first {
+            
+                                    pokeNode.eulerAngles.x = .pi / 2
+            
+                                    planeNode.addChildNode(pokeNode)
+                                }
+                            }
+                        }
         }
      
         return node
     }
 
     
-    func session(_ session: ARSession, didFailWithError error: Error) {
-        // Present an error message to the user
-        
-    }
-    
-    func sessionWasInterrupted(_ session: ARSession) {
-        // Inform the user that the session has been interrupted, for example, by presenting an overlay
-        
-    }
-    
-    func sessionInterruptionEnded(_ session: ARSession) {
-        // Reset tracking and/or remove existing anchors if consistent tracking is required
-        
-    }
+
 }

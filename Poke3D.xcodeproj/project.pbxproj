@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		D009279A2A7BA1E500AC20B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00927992A7BA1E500AC20B0 /* AppDelegate.swift */; };
-		D009279C2A7BA1E500AC20B0 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D009279B2A7BA1E500AC20B0 /* art.scnassets */; };
 		D009279E2A7BA1E500AC20B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009279D2A7BA1E500AC20B0 /* ViewController.swift */; };
 		D00927A12A7BA1E500AC20B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D009279F2A7BA1E500AC20B0 /* Main.storyboard */; };
 		D00927A32A7BA1ED00AC20B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00927A22A7BA1ED00AC20B0 /* Assets.xcassets */; };
 		D00927A62A7BA1ED00AC20B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00927A42A7BA1ED00AC20B0 /* LaunchScreen.storyboard */; };
+		D0BB9FF12A7BD89100243145 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BB9FF02A7BD89100243145 /* art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D00927962A7BA1E500AC20B0 /* Poke3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poke3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00927992A7BA1E500AC20B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D009279B2A7BA1E500AC20B0 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		D009279D2A7BA1E500AC20B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D00927A02A7BA1E500AC20B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D00927A22A7BA1ED00AC20B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D00927A52A7BA1ED00AC20B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0BB9FF02A7BD89100243145 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = "../../../../etc/Poke3D-iOS13-Completed-master/Poke3D/art.scnassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				D00927992A7BA1E500AC20B0 /* AppDelegate.swift */,
-				D009279B2A7BA1E500AC20B0 /* art.scnassets */,
+				D0BB9FF02A7BD89100243145 /* art.scnassets */,
 				D009279D2A7BA1E500AC20B0 /* ViewController.swift */,
 				D009279F2A7BA1E500AC20B0 /* Main.storyboard */,
 				D00927A22A7BA1ED00AC20B0 /* Assets.xcassets */,
@@ -123,8 +123,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D009279C2A7BA1E500AC20B0 /* art.scnassets in Resources */,
 				D00927A62A7BA1ED00AC20B0 /* LaunchScreen.storyboard in Resources */,
+				D0BB9FF12A7BD89100243145 /* art.scnassets in Resources */,
 				D00927A32A7BA1ED00AC20B0 /* Assets.xcassets in Resources */,
 				D00927A12A7BA1E500AC20B0 /* Main.storyboard in Resources */,
 			);
